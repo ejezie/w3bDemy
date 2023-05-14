@@ -1,0 +1,64 @@
+@import "base.scss";
+
+.authform-register {
+  width: 100%;
+
+  @media (max-width: 767px) {
+    padding: 0px 26px;
+  }
+
+  .authform-text-register {
+    margin-bottom: 24px;
+  }
+
+  .auth-form-tab-container-register {
+    background: rgba(47, 91, 66, 0.6);
+    border-radius: 33px;
+    max-width: 329px;
+    width: 100%;
+    margin-bottom: 52px;
+    padding: 10px 13px;
+    align-items: center;
+
+    .auth-form-tab-register {
+      @extend .auth-text;
+      color: white;
+      margin-right: 45px;
+      margin-left: 52px
+    }
+
+    .auth-form-tab-two-register {
+      @extend .auth-text;
+      color: white;
+      background-color: $green;
+      border-radius: 33px;
+      padding: 8px 51px;
+      
+    }
+  }
+
+  .auth-form-text-register {
+    color: #5b5b5b;
+    text-align: left;
+    max-width: 454px;
+    width: 100%;
+    margin-bottom: 42px;
+  }
+
+  .remember {
+    width: 100%;
+    margin-bottom: 62px;
+
+    .authform-checbox {
+      margin-right: 10px;
+    }
+  }
+
+  .input-margin {
+    margin-bottom: 30px;
+  }
+
+  .input-margin-two-register {
+    margin-bottom: 55px;
+  }
+}

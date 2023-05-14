@@ -1,0 +1,23 @@
+@import "base.scss";
+
+.login {
+  height: 900px;
+  .login-image {
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+    @media (max-width: 991px) {
+      display: none;
+    }
+  }
+  .login-form {
+    width: 50%;
+    height: 100%;
+    @media (max-width: 991px) {
+      width: 100%;
+    }
+    .login-form-wrap {
+      max-width: 454px;
+    }
+  }
+}

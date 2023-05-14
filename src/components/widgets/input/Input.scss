@@ -1,0 +1,37 @@
+@import "base.scss";
+
+.custom-input-container {
+  width: 100%;
+  .custom-input-text {
+    margin-bottom: 12px;
+  }
+  .custom-input {
+    border: 1px solid #2f5b42;
+    border-radius: 40px;
+    padding: 15px 31px;
+    width: 100%;
+    &::placeholder {
+      color: #acacac;
+      font-size: 15px;
+      font-family: "Poppins", sans-serif;
+      @media (max-width: 991px) {
+        font-size: 13px;
+      }
+    }
+  }
+  .custom-input-error {
+    @extend .auth-text;
+    color: red;
+    font-size: 12px;
+  }
+  .custom-input-wrap {
+    width: 100%;
+    position: relative;
+    .password-icon {
+      position: absolute;
+      right: 28px;
+      top: 23%;
+      cursor: pointer;
+    }
+  }
+}
