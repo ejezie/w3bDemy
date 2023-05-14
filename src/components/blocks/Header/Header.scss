@@ -1,0 +1,62 @@
+@import "base.scss";
+
+.header {
+  background-color: $green;
+  padding-left: 80px;
+  padding-right: 173px;
+  @media (max-width: 1200px) {
+    padding-left: 26px;
+    padding-right: 26px;
+  }
+  .header-logo {
+    .header-logo-image {
+      width: 92.68px;
+      height: 92.04px;
+      @media (max-width: 767px) {
+        width: 40px;
+        height: 40px;
+      }
+    }
+    .header-text {
+      font-size: 30px;
+      line-height: 45px;
+      font-weight: 800;
+      color: white;
+      @media (max-width: 767px) {
+        font-size: 16px;
+      }
+      .color-header {
+        color: #f48c06;
+      }
+    }
+  }
+  .header-links {
+    @media (max-width: 1200px) {
+      display: none;
+    }
+    .header-link {
+      color: white;
+      text-decoration: none;
+      margin-left: 30px;
+    }
+  }
+  .wallet {
+    padding: 12px 56px;
+    background: conic-gradient(
+      from 90deg at 50% 100%,
+      #ffffff 0deg,
+      #ffffff 360deg
+    );
+    box-shadow: 0px 20px 24px rgba(0, 0, 0, 0.03);
+    border-radius: 80px;
+    margin-left: 73px;
+    color: #5b5b5b;
+    cursor: pointer;
+  }
+  .header-menu {
+    display: none;
+    @media (max-width: 1200px) {
+      display: block;
+    }
+  }
+}

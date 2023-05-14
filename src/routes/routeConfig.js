@@ -1,10 +1,10 @@
 import { Routes, Route } from "react-router-dom";
 
 // All pages imports
-import { Login, Register } from "pages";
+import { Login, Register, Home } from "pages";
 
 // All constants imports
-import { LOGIN, REGISTER } from "./CONSTANTS";
+import { LOGIN, REGISTER, HOME } from "./CONSTANTS";
 
 import { ProtectedRoutes, PublicRoutes } from "components/guards";
 
@@ -19,6 +19,7 @@ const RouterConfig = () => {
           {/* Auth pages */}
           <Route path={LOGIN} element={<Login />} />
           <Route path={REGISTER} element={<Register />} />
+          <Route path={HOME} element={<Home />} />
         </Route>
 
         <Route path="/" element={<ProtectedRoutes />}>

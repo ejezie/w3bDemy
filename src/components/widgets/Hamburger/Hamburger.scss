@@ -1,0 +1,30 @@
+.hamburger-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 24px;
+    height: 20px;
+    cursor: pointer;
+    margin-right: 22px;
+    .line {
+        width: 16px;
+        height: 2px;
+        background-color: white;
+        transition: all 0.3s ease-in-out;
+        margin-bottom: 4px;
+    }
+
+    &.open {
+        .line:first-child {
+            transform: rotate(45deg) translate(4.3px, 4.3px);
+        }
+
+        .line:nth-child(2) {
+            opacity: 0;
+        }
+
+        .line:last-child {
+            transform: rotate(-45deg) translate(4.3px, -4.3px);
+        }
+    }
+}
